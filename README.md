@@ -92,7 +92,7 @@ ip = "YOUR_MISTY_IP"
 # Initialize Misty connection and modules
 robot    = Robot(ip)
 executor = ActionExecutionModule(robot)
-gred     = GREDActionGenerator(model, tokenizer, device, emotion="joy_hope")
+gred     = GREDActionGenerator(model, tokenizer, device, emotion)
 
 # (Optional) Add debug logging
 debug    = DebugModule()
